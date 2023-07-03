@@ -3,13 +3,14 @@ import { Route, Routes, BrowserRouter as Router } from 'react-router-dom';
 import Home from './Views/Home';
 import Register from './Views/Register';
 import Login from './Views/Login';
-import NavBar from './Components/NavBar';
+import NavBar from './Components/Navbar/NavBar';
 import ProductDetails from './Views/ProductDetails';
 import Error from './Views/Error';
 import { Container } from 'react-bootstrap'
 import NewProduct from './Views/NewProduct';
 import EditProduct from './Views/EditProduct';
 import AuthProvider from './Context/AuthContext';
+import Footer from './Components/Footer/Footer';
 
 
 
@@ -30,6 +31,7 @@ function App() {
           <Route path='*' element={<Error />} />
         </Routes>
       </Container>
+      <Footer />
       </AuthProvider>
     </Router>
     </div>
